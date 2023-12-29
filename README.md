@@ -1,2 +1,2 @@
 # ng-commerce
-Angular based E-Commerce project
+Angular-based E-Commerce project
