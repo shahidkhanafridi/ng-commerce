@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./seller-auth.component.css'],
 })
 export class SellerAuthComponent implements OnInit {
+  // 1. npm install -g json-server
+  // 2. json-server --watch db.json
   constructor() {}
 
   ngOnInit(): void {}
