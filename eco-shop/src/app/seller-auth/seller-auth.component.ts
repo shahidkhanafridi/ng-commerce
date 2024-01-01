@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SellerService } from '../services/seller.service';
-import { signUp } from '../data-type';
+import { login, signUp } from '../data-type';
 import { Router } from '@angular/router';
 
 @Component({
@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 })
 export class SellerAuthComponent implements OnInit {
   showLogin = false;
+  authError: string = '';
   // 1. npm install -g json-server
   // 2. json-server --watch db.json
   constructor(private seller: SellerService) {}
@@ -17,12 +18,21 @@ export class SellerAuthComponent implements OnInit {
   ngOnInit(): void {
     this.seller.reloadSeller();
   }
-  signUp(item: signUp): void {
-    console.log('item', item);
-    this.seller.userSignUp(item);
+  signUp(data: signUp): void {
+    console.log('item', data);
+    this.seller.userSignUp(data);
   }
-  login(item: signUp): void {
-    console.log('item', item);
+  login(data: login): void {
+    console.log('item', data);
+    this.seller.userLogin(data);
+    this.seller.isLoginError.subscribe((isError) => {
+      console.log(isError);
+      if (isError) {
+        this.authError = 'Email or password is incorrect';
+      } else {
+        this.authError = '';
+      }
+    });
   }
   openLogin(toggle: boolean) {
     this.showLogin = toggle;
