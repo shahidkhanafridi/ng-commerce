@@ -42,3 +42,8 @@
   text-decoration: none;
   color: blueviolet;
 }
+
+.nav h1 a {
+  color: blueviolet;
+  text-decoration: none;
+}
