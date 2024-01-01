@@ -12,3 +12,11 @@
     margin-top: 20px;
     text-align: left;
 }
+
+.auth-toggle-link {
+    color: blueviolet;
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: left;
+    cursor: pointer;
+}
