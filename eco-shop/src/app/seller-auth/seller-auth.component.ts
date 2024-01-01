@@ -11,16 +11,13 @@ import { Router } from '@angular/router';
 export class SellerAuthComponent implements OnInit {
   // 1. npm install -g json-server
   // 2. json-server --watch db.json
-  constructor(private seller: SellerService, private router: Router) {}
+  constructor(private seller: SellerService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.seller.reloadSeller();
+  }
   signUp(item: signUp): void {
     console.log('item', item);
-    this.seller.userSignUp(item).subscribe((result) => {
-      console.log(result);
-      if(result){
-        this.router.navigate(['seller-home'])
-      }
-    });
+    this.seller.userSignUp(item)
   }
 }

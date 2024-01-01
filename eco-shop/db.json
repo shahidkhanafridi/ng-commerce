@@ -23,6 +23,24 @@
       "password": "abc123@",
       "email": "fahad@test.com",
       "id": 4
+    },
+    {
+      "name": "ghani",
+      "password": "abc123@",
+      "email": "ghani@test.com",
+      "id": 5
+    },
+    {
+      "name": "sam",
+      "password": "abc@123",
+      "email": "sam@test.com",
+      "id": 6
+    },
+    {
+      "name": "bob",
+      "password": "abc123@",
+      "email": "bob@test.com",
+      "id": 7
     }
   ]
 }
