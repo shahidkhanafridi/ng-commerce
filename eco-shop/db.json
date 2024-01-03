@@ -54,13 +54,22 @@
       "id": 1
     },
     {
-      "name": "iPhone 12",
-      "price": "65000",
-      "category": "Mobile",
-      "color": "Blue",
-      "description": "Apple iPhone",
-      "image": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple-iPhone-14-iPhone-14-Plus-hero-220907_Full-Bleed-Image.jpg.small.jpg",
-      "id": 2
+      "name": "HP Elitebook",
+      "price": "2500",
+      "color": "silver",
+      "category": "laptop",
+      "description": "this is HP Elitebook",
+      "image": "https://i0.wp.com/www.itinternational.pk/wp-content/uploads/2020/12/HP-EliteBook-8470p-1.jpg?fit=500%2C500&ssl=1",
+      "id": 3
+    },
+    {
+      "name": "HP Elitebook 2",
+      "price": "3000",
+      "color": "silver",
+      "category": "laptop",
+      "description": "this is HP Elitebook 2",
+      "image": "https://i0.wp.com/www.itinternational.pk/wp-content/uploads/2020/12/HP-EliteBook-8470p-1.jpg?fit=500%2C500&ssl=1",
+      "id": 4
     }
   ]
 }
