@@ -56,9 +56,9 @@
     {
       "name": "HP Elitebook",
       "price": "2500",
-      "color": "silver",
       "category": "laptop",
-      "description": "this is HP Elitebook",
+      "color": "dark silver",
+      "description": "this is the HP Elite book",
       "image": "https://i0.wp.com/www.itinternational.pk/wp-content/uploads/2020/12/HP-EliteBook-8470p-1.jpg?fit=500%2C500&ssl=1",
       "id": 3
     },

@@ -24,13 +24,16 @@ export class SellerUpdateProductComponent implements OnInit {
       });
   }
   submit(data: product) {
+    if(this.productData){
+      data.id = this.productData.id;
+    }
     console.log(data);
-    // this.product.updateProduct(data).subscribe((result) => {
-    //   console.log(result);
-    //   if (result) {
-    //     this.addProductMessage = 'Product is added successfully';
-    //   }
-    // });
+    this.product.updateProduct(data).subscribe((result) => {
+      console.log(result);
+      if (result) {
+        this.addProductMessage = 'Product is updated successfully';
+      }
+    });
     setTimeout(() => {
       this.addProductMessage = undefined;
     }, 3000);
