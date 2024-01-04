@@ -56,7 +56,7 @@ export class HeaderComponent implements OnInit {
     this.router.navigate(['/details/' + id]);
   }
   submitSearch(val: string) {
-    console.warn(val);
+    console.log(val);
     this.router.navigate([`search/${val}`]);
   }
 }
