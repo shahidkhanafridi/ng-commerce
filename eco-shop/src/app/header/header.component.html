@@ -3,8 +3,17 @@
     <a routerLink="">E-Co</a>
   </h1>
   <div *ngIf="menuType === 'default'" class="nav-search">
-    <input type="text" placeholder="Search product" />
+    <input
+      type="text"
+      (keyup)="searchProduct($event)"
+      placeholder="Search product"
+    />
     <button>Search</button>
+    <ul class="suggested-search" *ngIf="searchResult">
+      <li *ngFor="let item of searchResult">
+        <a (mousedown)="redirectToDetails(item.id)">{{ item.name }}</a>
+      </li>
+    </ul>
   </div>
   <div [ngSwitch]="menuType">
     <ul *ngSwitchCase="'default'">
@@ -18,7 +27,7 @@
       <li><a routerLink="seller-home">List</a></li>
       <li><a (click)="logout()">Logout</a></li>
       <li>
-        <a href="#">{{ sellerName | titlecase}}</a>
+        <a href="#">{{ sellerName | titlecase }}</a>
       </li>
     </ul>
   </div>
